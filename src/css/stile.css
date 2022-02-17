@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body, html{
+  margin: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.wrapper{
+  height: 100%;
+}
+
+.nav{
+  height: 45px;
+  background-color: black;
+}
+
+.nav img{
+  height: 33px;
+  display: inline;
+}
+
+.grid{
+  display: grid;
+  color: white;
+}
+
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  padding-left: 12px;
+  padding-top: 6px;
+}
+.two {
+  grid-column: 3;
+  grid-row: 1;
+  padding-top: 12px;
+}
+.three {
+  grid-column: 4;
+  grid-row: 1;
+  padding-top: 12px;
+}
+.four {
+  grid-column: 5;
+  grid-row: 1;
+  padding-top: 12px;
+}
+.five {
+  grid-column: 6;
+  grid-row: 1;
+  padding-top: 12px;
+}
+
+.six{
+  grid-column: 9 / 10;
+  grid-row: 1;
+  background-color: red;
+  border-radius: 10px;
+  height: 27px;
+  margin-top: 6px;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.start{
+  background-image: url(../img/tree.jpg);
+  background-size: 100%;
+  height: 400px;
+  width: 100%;
+}
+
+.start h1{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding: 170px 0;
+  font-style: bold;
+  color: #000000;
+  font-size: 70pt;
+}
+
+@media screen and (min-width: 1000px) and (max-width:1250px) {
+  .start{
+    background-size: 100%;
+    background-image: url(../img/tree.jpg);
+    height: 500px;
+    width: 100%;
+  }
+  .start h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 230px 0;
+    font-size: 50pt;
+  }
+}
+
+@media screen and (min-width:1250px){
+  .start{
+    background-size: 100%;
+    background-image: url(../img/tree.jpg);
+    height: 600px;
+    width: 100%;
+  }
+  .start h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 270px 0;
+    font-size: 70pt;
+  }
+}
+
+@media screen and (max-width: 790px){
+  .start{
+    background-size: 100%;
+    background-image: url(../img/tree.jpg);
+    height: 300px;
+    width: 100%;
+  }
+  .start h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 120px 0;
+    font-size: 50pt;
+  }
+}
+
+
+.content{
+  background-color: #282222;
+  min-height: 700px;
+  margin: 0 15%;
+  position: relative;
+  top: -60px;
+  padding: 25px 35px;
+}
+
+.content p{
+  font-size: 25px;
+  color: cornsilk;
+  padding-bottom: 20px;
+}
+
+.footer{
+  height: 150px;
+  background-color: black;
+  margin-top: -100px;
+}
+
+
+/* bottoni */
+.button{
+  appearance: none;
+  background-color: #000000;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0.5em 0.5em;
+  opacity: 1;
+  outline: 0;
+  padding: 0.5em 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.button:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #444444;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button:after {
+  background-color: #FFFFFF;
+}
+
+.button span {
+  z-index: 1;
+  position: relative;
+}
+
+/*link*/
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
