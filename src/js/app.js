@@ -14,7 +14,7 @@ logo.addEventListener("click", event => fLogo());
 function fProdotto(){
     var h1 = document.getElementsByTagName("h1")[0];
     h1.innerHTML = "Prodotto";
-    console.log("entrata");
+    h1.style.color = "black";
 
     var img = document.querySelector(".start");
     img.style.backgroundImage = "url(src/img/cpu.jfif)";
@@ -25,15 +25,16 @@ function fChiSiamo(){
     h1.innerHTML = "Chi siamo";
 
     var img = document.querySelector(".start");
-    img.style.backgroundImage = "url(src/img/cpu.jfif)"; 
+    img.style.backgroundImage = "url(src/img/people.png)"; 
 }
 
 function fPartner(){
     var h1 = document.getElementsByTagName("h1")[0];
     h1.innerHTML = "Partner";
+    h1.style.color = "black";
 
     var img = document.querySelector(".start");
-    img.style.backgroundImage = "url(src/img/cpu.jfif)"; 
+    img.style.backgroundImage = "url(src/img/meet.jpg)"; 
 }
 
 function fSoftware(){
@@ -48,6 +49,7 @@ function fSoftware(){
 function fLogo(){
     var h1 = document.getElementsByTagName("h1")[0];
     h1.innerHTML = "WELCOME to the future";
+    h1.style.color = "black";
 
     var img = document.querySelector(".start");
     img.style.backgroundImage = "url(src/img/tree.jpg)"; 

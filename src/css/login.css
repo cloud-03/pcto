@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.wrapper{
+    filter: blur(1px);
+    transition: 1s;
+}
+
+.login{
+    position: fixed;
+    top: 100px;
+    width: 300px;
+    margin: 0px 35%;
+    padding: 25px;
+    padding-top: 10px;
+    background-color: azure;
+    border-radius: 5px;
+}
+
+input{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 210px;
+    display: block;
+}
+
+#submit{
+    margin: 17px 32% 0px;
+    width: 95px;
+}
+
+#redirect{
+    text-decoration: underline;
+}
+
+#close{
+    position: absolute;
+    padding: 5px;
+    border-radius: 4px;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+}
+
+#close:hover{
+    cursor: pointer;
+    background-color: rgb(175, 175, 175);
+}
