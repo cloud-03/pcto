@@ -5,11 +5,24 @@
     transition: 1s;
 }
 
+@media (max-width:1250px){
+    .login{
+        position: fixed;
+        top: 100px;
+        width: 300px;
+        margin: 0px 28%;
+        padding: 25px;
+        padding-top: 10px;
+        background-color: azure;
+        border-radius: 5px;
+    }
+}
+
 .login{
     position: fixed;
     top: 100px;
     width: 300px;
-    margin: 0px 35%;
+    margin: 0px 40%;
     padding: 25px;
     padding-top: 10px;
     background-color: azure;
