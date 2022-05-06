@@ -2,7 +2,6 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
@@ -10,9 +9,8 @@
     <link rel="stylesheet" href="src/css/stile.css">
     
 </head>
-<body> 
+<body>
     <div class="wrapper">
-        
         <div class="nav">
             <div class="grid">
                 <img alt="logo" src="src/img/logo.png" class="one" id="logo">
@@ -20,7 +18,7 @@
                 <div class="button three" id="chiSiamo"role="button"><span class="text">Chi siamo</span></div>
                 <div class="button four" id="partner" role="button"><span class="text">Partner</span></div>
                 <div class="button five" id="software" role="button"><span class="text">Software</span></div>
-                <div class="six" id="login">Login</div>
+                <div class="six" id="login"> <a href="pages/login.php">Login</a></div>
             </div>
         </div>
         <div class="start">
@@ -45,16 +43,16 @@
     <div class="login">
         <img src="src/img/close.png" alt="close" id="close">
         <h3>Login</h3>
-        <form action="src/php/pArea.php" method="post">
+        <form action="./index.php" method="post">
             <label for="user">Username</label>
             <input type="text" name="user" id="">
-            <label for="Password">Password</label>
-            <input type="password" name="" id="">
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd">
             <a href="pages/regist.html" id="redirect">Registrati</a>
+            
             <input type="submit" value="ENTER" id="submit">
         </form>
     </div>
     <script src="src/js/app.js"></script>
-    <script src="src/js/login.js"></script>
 </body>
 </html>

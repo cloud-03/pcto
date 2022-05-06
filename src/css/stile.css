@@ -10,7 +10,21 @@ body, html{
   height: 45px;
   background-color: black;
 }
+a{
+  color: white;
+}
 
+
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+a:visited{
+  text-decoration: none;
+  color: white;
+}
 .nav img{
   height: 33px;
   display: inline;

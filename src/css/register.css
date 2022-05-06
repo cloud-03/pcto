@@ -10,9 +10,9 @@ form {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 564px;
+  height: 625px;
   padding: 20px;
-  width: 320px;
+  width: 400 px;
 }
 
 .title {
@@ -21,6 +21,19 @@ form {
   font-size: 36px;
   font-weight: 600;
   margin-top: 30px;
+}
+
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
+
+a:visited{
+  color: white;
 }
 
 .subtitle {

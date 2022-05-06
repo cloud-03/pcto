@@ -7,7 +7,7 @@ CREATE TABLE utente(
     nome VARCHAR(30) NOT NULL,
     cognome VARCHAR(30) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    pwd VARCHAR(25) NOT NULL
+    pwd VARCHAR(200) NOT NULL
 )ENGINE=INNODB;
         
 CREATE TABLE cestino(
@@ -18,7 +18,8 @@ CREATE TABLE cestino(
 CREATE TABLE netturbino(
     id INT NOT NULL PRIMARY KEY,
     nome VARCHAR(30) NOT NULL,
-    cognome VARCHAR(30) NOT NULL
+    cognome VARCHAR(30) NOT NULL,
+    card VARCHAR(8) UNIQUE
 )ENGINE=INNODB;
 
 CREATE TABLE possiede(
@@ -43,7 +44,7 @@ CREATE TABLE svuota(
     orario DATE,
     idNetturbino INT,
     idCestino INT,
-    PRIMARY KEY (idCestino, idNetturbino),
+    PRIMARY KEY (idCestino, idNetturbino, orario),
     CONSTRAINT d FOREIGN KEY(idCestino) REFERENCES cestino(id),
     CONSTRAINT e FOREIGN KEY(idNetturbino) REFERENCES netturbino(id) 
 )ENGINE=INNODB;
