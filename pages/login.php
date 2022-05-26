@@ -41,7 +41,6 @@
                     if (!$user || password_verify($pwd, $user['pwd']) === false) {
                         echo "<div style='color: red;''>Credenziali utente errate</div>";
                     } else {
-                        session_regenerate_id();
                         $_SESSION['session_id'] = session_id();
                         $_SESSION['email'] = $user['email'];
                         $_SESSION['id'] = $user['id'];

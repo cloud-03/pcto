@@ -13,7 +13,7 @@
     <div class="wrapper">
         <div class="nav">
             <div class="grid">
-                <img alt="logo" src="src/img/logo.png" class="one" id="logo">
+                <img alt="logo" src="src/img/logo1.png" class="one" id="logo">
                 <div class="button two" id="prodotto" role="button"><span class="text">Prodotto</span></div>
                 <div class="button three" id="chiSiamo"role="button"><span class="text">Chi siamo</span></div>
                 <div class="button four" id="partner" role="button"><span class="text">Partner</span></div>

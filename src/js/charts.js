@@ -29,7 +29,6 @@ var layout2 = {
   },
 };
 
-console.log(xArray1.length);
 if(xArray1.length != 0 || yArray1.length != 0){
   Plotly.newPlot("LineGraph", data1, layout1);
 }
